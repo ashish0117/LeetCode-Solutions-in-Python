@@ -1,0 +1,35 @@
+'''
+You are a developer/student for a university. Your current project is to develop a system for students to find courses they share with
+friends. The university has a system for querying courses students are enrolled in, returned as a list of (ID, course) pairs.
+
+Write a function that takes in a collection of (student ID number, course name) pairs and returns, for every pair of students, a 
+collection of all courses they share.
+
+
+Sample Input:
+
+enrollments1 = [
+  ["518", "Image Processing"],
+  ["914", "CPP"],
+  ["914", "Operating Systems"],
+  ["171", "Data Structures"],
+  ["518", "SAD"],
+  ["518", "Computer Graphics"],
+  ["171", "Image Processing"],
+  ["171", "Software Engineering"],
+  ["914", "Computer Graphics"],
+  ["125", "Computer Graphics"],
+  ["518", "Data Structures"],
+]
+
+Sample Output (pseudocode, in any order):
+
+find_pairs(enrollments1) =>
+{
+"125,171": []
+"125,518": ['Computer Graphics']
+"125,914": ['Computer Graphics']
+"171,518": ['Data Structures', 'Image Processing']
+"171,914": []
+"518,914": ['Computer Graphics']
+}
